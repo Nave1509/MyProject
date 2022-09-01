@@ -192,6 +192,9 @@ p {
 }
 
 .baker {
+  margin: 80px;
+  display: flex;
+  height: 300px;
   border: 1px solid rgb(0, 0, 0);
   padding: 20px;
   background: #000;
@@ -244,5 +247,17 @@ p {
   }
   .m li {
     width: 24%;
+  }
+  .Hero {
+    width: 140%;
+  }
+  .baker {
+    flex-direction: column;
+    height: 500px;
+    margin: 40px;
+  }
+  .input-group {
+    right: 200px;
+    width: 150px;
   }
 }

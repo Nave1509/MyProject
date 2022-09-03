@@ -16,7 +16,6 @@
 footer {
   height: 252px;
   width: 100vw;
-  margin-top: 60px;
   background: #111;
   color: white;
   font-family: open sans-serif;
@@ -212,6 +211,11 @@ h2 {
 }
 
 .p-about {
+  padding: 55px;
+  width: 74%;
+}
+
+.p2-about {
   padding: 55px;
   width: 74%;
 }

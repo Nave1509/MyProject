@@ -15,7 +15,7 @@
 
 footer {
   height: 252px;
-  width: 100vw;
+  width: 100%;
   background: #111;
   color: white;
   font-family: open sans-serif;
@@ -40,7 +40,6 @@ footer {
 }
 
 .footer-bottom {
-  width: 100vw;
   margin-top: 24px;
   padding: 30px;
   text-align: center;
@@ -191,9 +190,7 @@ textarea {
 .btn {
   width: 213%;
   height: 50px;
-  left: 653px;
   color: #fff;
-  outline: none;
   background: transparent;
   border: 1px solid #fff;
   cursor: pointer;
@@ -219,16 +216,16 @@ textarea:valid ~ label {
 }
 
 h2 {
-  left: 45%;
-  top: 35px;
+  top: 66px;
+  text-align: center;
+}
+
+.all-p {
+  margin-top: 110px;
 }
 
 .p-about {
-  padding: 55px;
-  width: 74%;
-}
-
-.p2-about {
+  margin-top: -46px;
   padding: 55px;
   width: 74%;
 }
@@ -305,10 +302,12 @@ h2 {
   .baker {
     flex-direction: column;
     height: 500px;
-    margin: 40px;
   }
   .input-group {
     right: 200px;
     width: 150px;
+  }
+  .btn {
+    margin-left: -197px;
   }
 }

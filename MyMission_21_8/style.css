@@ -37,7 +37,8 @@ footer {
 }
 .footer-bottom {
   width: 100vw;
-  padding: 20px;
+  margin-top: 24px;
+  padding: 30px;
   text-align: center;
   background: #000;
 }
@@ -225,6 +226,9 @@ h2 {
 }
 
 .baker {
+  margin: 80px;
+  display: flex;
+  height: 300px;
   border: 1px solid rgb(0, 0, 0);
   padding: 20px;
   background: #000;

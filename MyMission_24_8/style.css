@@ -275,6 +275,80 @@ h2 {
   object-fit: cover;
 }
 
+@media (max-width: 1200px) and (min-width: 801px) {
+  .BigBox {
+    padding: 20px;
+  }
+  .BigBox img {
+    width: 50%;
+    height: 150px;
+  }
+  body {
+    background-color: #e26fd8;
+  }
+  footer {
+    background-color: rgb(34, 28, 146);
+    color: #fff;
+  }
+  .footer-bottom {
+    background: #71e263;
+  }
+  .m li {
+    width: 24%;
+  }
+  .Hero {
+    width: 140%;
+  }
+  .baker {
+    flex-direction: column;
+    height: 500px;
+  }
+  .input-group {
+    right: 200px;
+    width: 150px;
+  }
+  .btn {
+    margin-left: -197px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 601px) {
+  .BigBox {
+    padding: 20px;
+  }
+  .BigBox img {
+    width: 50%;
+    height: 150px;
+  }
+  body {
+    background-color: #e26f6f;
+  }
+  footer {
+    background-color: rgb(148, 141, 141);
+    color: #fff;
+  }
+  .footer-bottom {
+    background: #ffbf14;
+  }
+  .m li {
+    width: 24%;
+  }
+  .Hero {
+    width: 140%;
+  }
+  .baker {
+    flex-direction: column;
+    height: 500px;
+  }
+  .input-group {
+    right: 200px;
+    width: 150px;
+  }
+  .btn {
+    margin-left: -197px;
+  }
+}
+
 @media (max-width: 600px) {
   .BigBox {
     padding: 20px;

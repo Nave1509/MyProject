@@ -280,8 +280,8 @@ h2 {
     padding: 20px;
   }
   .BigBox img {
-    width: 50%;
-    height: 150px;
+    width: 25%;
+    height: 215px;
   }
   body {
     background-color: #e26fd8;
@@ -358,14 +358,15 @@ h2 {
     height: 150px;
   }
   body {
-    background-color: #e26f6f;
+    background-color: #81e3a8;
   }
   footer {
-    background-color: rgb(148, 141, 141);
+    background-color: rgb(210, 114, 129);
     color: #fff;
   }
   .footer-bottom {
-    background: #ffbf14;
+    background: #d44e94;
+    display: flex;
   }
   .m li {
     width: 24%;
@@ -383,5 +384,7 @@ h2 {
   }
   .btn {
     margin-left: -197px;
+  }
+  .footer-bottom span {
   }
 }

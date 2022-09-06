@@ -1,24 +1,21 @@
-function showResult() {
-  let firstNumber = Number(document.getElementById("firstNumberElement").value);
-  let secondNumber = Number(
-    document.getElementById("secondNumberElement").value
-  );
-  let operator = document.getElementById("operatorElement").value;
-
-  if (isNaN(firstNumber)) {
-    alert("הערך הראשון אינו מספר");
-  } else if (isNaN(secondNumber)) {
+let num1 = Number(prompt("enter first number:"));
+if (isNaN(num1)) {
+  alert("First Num is Not a Number");
+} else {
+  let operator = prompt("Enter a math operation");
+  let num2 = Number(prompt("Enter second Number:"));
+  if (isNaN(num2)) {
     alert("הערך השני אינו מספר");
   } else {
     let finalResult;
     if (operator == "+") {
-      finalResult = firstNumber + secondNumber;
+      finalResult = num1 + num2;
     } else if (operator == "-") {
-      finalResult = firstNumber - secondNumber;
+      finalResult = num1 - num2;
     } else if (operator == "*") {
-      finalResult = firstNumber * secondNumber;
+      finalResult = num1 * num2;
     } else if (operator == "/") {
-      finalResult = firstNumber / secondNumber;
+      finalResult = num1 / num2;
     }
 
     alert(finalResult);

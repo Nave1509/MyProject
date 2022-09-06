@@ -137,7 +137,7 @@ h4 {
   text-transform: capitalize;
   color: white;
   font-weight: 100;
-  line-height: 25px;
+  line-height: 30px;
   letter-spacing: 0.4px;
   opacity: 0.5;
 }
@@ -303,6 +303,10 @@ h2 {
     flex-direction: column;
     height: 500px;
   }
+  .baker h4 {
+    line-height: 21px;
+  }
+
   .input-group {
     right: 200px;
     width: 150px;
@@ -333,13 +337,14 @@ h2 {
   .m li {
     width: 24%;
   }
-  .Hero {
-    width: 140%;
-  }
   .baker {
     flex-direction: column;
     height: 500px;
   }
+  .baker h4 {
+    line-height: 21px;
+  }
+
   .input-group {
     right: 200px;
     width: 150px;
@@ -377,6 +382,10 @@ h2 {
   .baker {
     flex-direction: column;
     height: 500px;
+    margin: 54px;
+  }
+  .baker h4 {
+    line-height: 21px;
   }
   .input-group {
     right: 200px;

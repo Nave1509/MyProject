@@ -5,7 +5,7 @@ if (isNaN(num1)) {
   let operator = prompt("Enter a math operation");
   let num2 = Number(prompt("Enter second Number:"));
   if (isNaN(num2)) {
-    alert("הערך השני אינו מספר");
+    alert("Second Num is Not a Number");
   } else {
     let finalResult;
     if (operator == "+") {
@@ -17,7 +17,6 @@ if (isNaN(num1)) {
     } else if (operator == "/") {
       finalResult = num1 / num2;
     }
-
     alert(finalResult);
   }
 }

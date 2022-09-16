@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="l">
+        <ul class="list">
+          <li>Login</li>
+          <li>Sign Up</li>
+          <li>My Orders</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <ul class="m">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Gallery.html">Gallery</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="allProducts">
+      <div class="Product1">
+        <h1>HP computer</h1>
+        <p>999$</p>
+        <img src="./img/pc hp.png" alt=" HP computer " />
+        <button onclick="addToCart(0)">Add To Cart</button>
+      </div>
+
+      <div class="Product2">
+        <h1>samsung Tv</h1>
+        <p>1299$</p>
+        <img src="./img/samsung tv.png" alt="tv samsung " />
+        <button onclick="addToCart(1)">Add To Cart</button>
+      </div>
+
+      <div class="Product3">
+        <h1>DeLonghi Microwave</h1>
+        <p>199$</p>
+        <img src="./img/microwave.jpg" alt="DeLonghi microwave " />
+        <div class="priceAndName">
+          <button onclick="addToCart(2)">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="myCart">
+      <img src="./img/emptyCartToFill.png" alt="cart" />
+      <h1>to my shopping cart</h1>
+      <div id="shoppingCart"></div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <h3>big code</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus quidem temporibus dolore officiis.
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          copyright &copy;2022 big code. designed by
+          <span> nave cohen developer web </span>
+        </p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

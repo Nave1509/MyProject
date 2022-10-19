@@ -1,0 +1,25 @@
+body {
+  background-color: bisque;
+}
+
+button {
+  background-color: rgb(167, 43, 124);
+}
+
+.corect {
+  background-color: red;
+}
+
+.error {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: green;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: gold;
+}
+
+/*# sourceMappingURL=try.css.map */

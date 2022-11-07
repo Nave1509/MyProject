@@ -1,4 +1,4 @@
-class Reader {
+class Readers {
   constructor(firstName, lastName, Hometown) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -11,19 +11,19 @@ class Reader {
   }
 }
 
-let Ben = new Reader("Ben", "Cohen", "natanya");
+let Ben = new Readers("Ben", "Cohen", "natanya");
 Ben.updateBook("Anna Karenina");
 Ben.updateBook("Aya Pluto");
 
-let Nave = new Reader("Nave", "Cohen", "Ashdod");
+let Nave = new Readers("Nave", "Cohen", "Ashdod");
 Nave.updateBook("Alice in Wonderland");
 Nave.updateBook("Portrait of a lady");
 
-let Sapir = new Reader("Sapir", "Cohen", "Ashdod");
+let Sapir = new Readers("Sapir", "Cohen", "Ashdod");
 Sapir.updateBook("a tale of five balloons");
 Sapir.updateBook("Room on the Broom");
 
-let Kobe = new Reader("Kobe", "Cohen", "Sderot");
+let Kobe = new Readers("Kobe", "Cohen", "Sderot");
 Kobe.updateBook("the Hungry Caterpillar");
 Kobe.updateBook("Surrender");
 
@@ -61,6 +61,7 @@ newReport.addNewUser(Ben);
 newReport.addNewUser(Nave);
 newReport.addNewUser(Sapir);
 newReport.addNewUser(Kobe);
+newReport.addNewUser(new Readers("lior", "Jacob", "Holon"));
 
 // Printing the Report
 newReport.printReport();

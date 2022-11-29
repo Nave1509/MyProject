@@ -75,23 +75,6 @@ getPosts
   .then((allComments) => pushComment(allComments))
   .then(() => printToHtml(relevantData));
 
-// function printToHtml(content) {
-//   console.log(content);
-
-//   content[0].forEach((post) => {
-//     let myDiv = document.createElement("div");
-//     myDiv.innerHTML = `<h2>Post Title: ${post.postTitle}</h2><p>Post Content: ${post.postBody}</p>`;
-//     content[1].forEach((comment) => {
-//       if (post.postID == comment.commentToPost) {
-//         let commentDiv = document.createElement("div");
-//         commentDiv.innerHTML = `<p>Comment to Post: ${comment.commentToPost}</p><p><b>Name:</b> ${comment.name}</p><p><b>Email:</b> ${comment.email}</p><p>Comment: ${comment.commentBody}</p>`;
-//         myDiv.appendChild(commentDiv);
-//       }
-//     });
-//     document.body.appendChild(myDiv);
-//   });
-// }
-
 function printToHtml(content) {
   content[0].forEach((post) => {
     let DivPost = document.createElement("div");

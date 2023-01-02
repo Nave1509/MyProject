@@ -1,0 +1,239 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+:root {
+  --main-color: #d6932e;
+  --bg-color: #000000;
+  --text-color: #fff;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+/**** HTML ****/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+/*** Header ***/
+.header {
+  background: #000000d0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.header .navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+.header .logo img {
+  height: 6rem;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.header .headerIcon {
+  display: inline-block;
+  margin: 0 2px;
+}
+#cart-icon {
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 107px 100px;
+}
+.container:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/coffee-beans-1291656_1920.jpg") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(50px);
+}
+.contact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+.left {
+  height: 100%;
+  background: url("./images/coffee-beans-1291656_1920.jpg") no-repeat center;
+  background-size: cover;
+}
+.right {
+  padding: 25px 40px;
+  color: #d6932e;
+}
+.heading {
+  text-align: center;
+  color: var(--bg-color);
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.heading span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
+h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #fd4646;
+}
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.5rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.area {
+  min-height: 150px;
+}
+.btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  border: none;
+  color: #fff;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d6932e83;
+}
+
+#productsTable {
+  display: block;
+}
+#productsTable tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+tbody img {
+  width: 55%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#productsTable tr {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+#productsTable td {
+  display: block;
+  padding: 10px;
+}
+
+.saveBtn,
+.cancelBtn {
+  display: none;
+}
+.ProductBTN {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 8px 0 0;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.ProductBTN:hover {
+  box-shadow: 0 0 10px 0 #00000080;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+}

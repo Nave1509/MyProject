@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Management.css" />
+
+    <title>store management</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="" />
+
+      <nav class="navbar">
+        <a href="http://127.0.0.1:5501/index.html">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <h1 class="heading">adding <span>products</span></h1>
+          <input
+            type="text"
+            class="field"
+            id="productName"
+            placeholder="Add Name"
+          />
+          <input
+            type="number"
+            class="field"
+            id="productPrice"
+            placeholder="Add Price"
+          />
+          <input
+            type="text"
+            class="field"
+            id="imgurl"
+            placeholder="Add Image Url"
+          />
+          <textarea
+            id="description"
+            class="field area"
+            placeholder="description"
+          ></textarea>
+          <button id="addProduct" class="btn">Add an item</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <table id="productsTable">
+      <tbody></tbody>
+    </table>
+    <script type="module" src="./buildProduct.js"></script>
+  </body>
+</html>

@@ -460,7 +460,10 @@ section {
   font-size: 2.5rem;
   margin-left: 2rem;
 }
-.header .headerIcon:hover {
+.header .fa-shopping-cart:hover {
+  color: var(--main-color);
+}
+.header .fa-bars:hover {
   color: var(--main-color);
 }
 .shop-container .box-container {

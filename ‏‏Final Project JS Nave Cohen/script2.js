@@ -4,14 +4,12 @@ import { loadProducts } from "./shared.js";
 export class Store {
   constructor() {
     this.navbar = document.querySelector(".navbar");
-
     document.querySelector("#menu-btn").onclick = () => {
       this.navbar.classList.toggle("active");
       this.cartItem.classList.remove("active");
     };
 
     this.cartItem = document.querySelector(".cart");
-
     document.querySelector("#cart-icon").onclick = () => {
       this.cartItem.classList.toggle("active");
       this.navbar.classList.remove("active");
@@ -27,7 +25,7 @@ export class Store {
     this.allProducts.forEach((product) => this.showProduct(product));
     this.cart = new Cart(this.allProducts);
   }
-
+  // create product Doms
   showProduct(product) {
     let myProductDiv = document.createElement("div");
     myProductDiv.setAttribute("class", "myProduct");
@@ -85,7 +83,6 @@ export class Store {
     shoppingBag.setAttribute("class", "bx bx-shopping-bag add-cart");
     shoppingBag.innerHTML = "Add To Cart";
     addToCart.appendChild(shoppingBag);
-
     addToCart.addEventListener("click", (e) => {
       this.cart.addCartClicked(e);
     });
@@ -95,23 +92,5 @@ export class Store {
     this.productsDiv.appendChild(myProductDiv);
   }
 }
+// create a new Object of type Stor
 new Store();
-
-// let navbar = document.querySelector(".navbar");
-
-// document.querySelector("#menu-btn").onclick = () => {
-//   navbar.classList.toggle("active");
-//   cartItem.classList.remove("active");
-// };
-
-// let cartItem = document.querySelector(".cart-items-container");
-
-// document.querySelector("#cart-icon").onclick = () => {
-//   cartItem.classList.toggle("active");
-//   navbar.classList.remove("active");
-// };
-
-// window.onscroll = () => {
-//   navbar.classList.remove("active");
-//   cartItem.classList.remove("active");
-// };

@@ -488,7 +488,6 @@ section {
 }
 
 /* BreakPoints / Making Responsive  */
-
 @media (max-width: 768px) {
   #menu-btn {
     display: inline-block;

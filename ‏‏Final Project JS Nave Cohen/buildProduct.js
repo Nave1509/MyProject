@@ -25,6 +25,7 @@ const drawHTML = () => {
        </td>
   </tr>`;
   });
+
   // Remove ","
   tbody.innerHTML = tbody.innerHTML.replaceAll("</tr>,", "</tr>");
 

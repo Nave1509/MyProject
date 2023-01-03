@@ -45,7 +45,6 @@ export class Cart {
     let productID = Number(root.dataset.productId);
 
     buyProducts = JSON.parse(localStorage.getItem("buyProducts"));
-    // buyProducts[index].count += parseInt(count);
 
     const foundIndex = buyProducts.findIndex((x) => x.productID == productID);
     if (foundIndex != -1) {

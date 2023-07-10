@@ -12,11 +12,14 @@ const drawHTML = () => {
   tbody.innerHTML = products.map((x, index) => {
     return `
   <tr data-id="${x.productID}">
-      <td style="display:none;">${index + 1}.</td>
-      <td style="font-size:23px">${x.productName}</td>
-      <td><img src="${x.productIMG}"></td>
-      <td style="font-size:17px">${x.productDesc}</td>
-      <td style="font-size:2.5rem">$${x.productPrice}</td>
+      <td class="productInfo" style="display:none">${index + 1}.</td>
+      <td class="productInfo" style="font-size:23px">${x.productName}</td>
+      <td class="productInfo"><img src="${x.productIMG}"></td>
+      <td class="productInfo" style="font-size:17px">${x.productDesc}</td>
+   
+      <td style="font-size:1.5rem">  $ <span class="productInfo">${
+        x.productPrice
+      }</span></td>
       
       <td><a class="deleteBtn ProductBTN">Delete Product </a>
         <a class="editBtn ProductBTN">Edit product</a>
@@ -38,11 +41,13 @@ const drawHTML = () => {
         "inline";
 
       // Turn elements into input fields
-      const tds = e.target.parentElement.parentElement.querySelectorAll("td");
+      const tds =
+        e.target.parentElement.parentElement.querySelectorAll(".productInfo");
       tds.forEach((x, index) => {
         if (x.querySelector(".deleteBtn") || index === 0) {
           return;
         }
+
         let img = x.querySelector("img");
         if (img) {
           x.innerHTML = `<input value="${img.src}">`;
@@ -74,6 +79,7 @@ const drawHTML = () => {
         found.productPrice = tds[4].querySelector("input").value;
         found.productDesc = tds[3].querySelector("input").value;
         found.productIMG = tds[2].querySelector("input").value;
+        console.log(found);
         setProducts(products);
       }
       drawHTML();
